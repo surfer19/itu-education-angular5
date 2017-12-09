@@ -25,6 +25,8 @@ import { HomeComponent } from './home/home.component';
 import { BgnrComponent } from './bgnr/bgnr.component';
 import { AdvcComponent } from './advc/advc.component';
 import { ExprComponent } from './expr/expr.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { NavigationComponent } from './navigation/navigation.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
@@ -33,6 +35,9 @@ const appRoutes: Routes = [
   { path: 'bgnr',  component: BgnrComponent, pathMatch: 'full' },
   { path: 'advc',  component: AdvcComponent, pathMatch: 'full' },
   { path: 'expr',  component: ExprComponent, pathMatch: 'full' },
+  { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
+  { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
+  
   // { path: 'logout', component: LoginComponent },
 
   // otherwise redirect to home
@@ -47,6 +52,9 @@ const appRoutes: Routes = [
     BgnrComponent,
     AdvcComponent,
     ExprComponent,
+    HomeComponent,
+    RegistrationComponent,
+    NavigationComponent
   ],
   imports: [
     HttpModule,
@@ -55,7 +63,7 @@ const appRoutes: Routes = [
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: false } // <-- debugging purposes only
     ),
     // BrowserAnimationsModule,
     // MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatGridListModule

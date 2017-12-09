@@ -19,7 +19,6 @@ import { MockBackend, MockConnection } from '@angular/http/testing';
 // import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
@@ -40,7 +39,6 @@ const appRoutes: Routes = [
   { path: 'expr',  component: ExprComponent, pathMatch: 'full' },
   { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
   { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
-  
   { path: 'choose', component: TaskChooseComponent, pathMatch: 'full' },
   // { path: 'logout', component: LoginComponent },
   // otherwise redirect to home
@@ -57,7 +55,7 @@ const appRoutes: Routes = [
     ExprComponent,
     HomeComponent,
     RegistrationComponent,
-    NavigationComponent
+    NavigationComponent,
     TaskChooseComponent
   ],
   imports: [

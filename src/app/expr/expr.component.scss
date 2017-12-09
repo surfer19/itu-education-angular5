@@ -1,3 +1,5 @@
+@import "~sass/variables";
+
 .nav {
     min-height: 5vh;
     background: blue;
@@ -18,14 +20,14 @@
     max-height: 250px;
 }
 .bgnr-btn-clr{
-    background-color: red;
+    background-color: $pink;
 }
 .bgnr-txt-clr{
-    color:  red; 
+    color:  $pink; 
 }
 
 .container-bckg{
-    background-color: grey;
+    background-color: $grey_light;
 }
 
 .btn-circle.btn-xl {
@@ -45,7 +47,7 @@
     height: 150px;
     margin: 50px;
     text-align: center;
-    background-color: rgb(129, 125, 125);
+    background-color: $grey_light;
   }
 
   .play-size{

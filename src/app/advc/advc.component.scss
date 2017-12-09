@@ -1,7 +1,5 @@
-.nav {
-    min-height: 5vh;
-    background: blue;
-}
+@import "~sass/variables";
+
 .full-height{
     height: 95vh;
 }
@@ -18,14 +16,14 @@
     max-height: 250px;
 }
 .bgnr-btn-clr{
-    background-color: orange;
+    background-color: $orange;
 }
 .bgnr-txt-clr{
-    color:  orange; 
+    color:  $orange; 
 }
 
-.container-bckg{
-    background-color: grey;
+.container-bckg {
+    background-color: $grey_light;
 }
 
 .btn-circle.btn-xl {

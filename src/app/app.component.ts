@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
+import { NavigationComponent } from './navigation/navigation.component';
 import 'rxjs/Rx';
 
 @Component({

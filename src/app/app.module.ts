@@ -28,6 +28,8 @@ import { AdvcComponent } from './advc/advc.component';
 import { ExprComponent } from './expr/expr.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { TaskChooseComponent } from './task-choose/task-choose.component';
+// import { TaskLayoutComponent } from './tasks/task-layout/task-layout.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
@@ -39,8 +41,8 @@ const appRoutes: Routes = [
   { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
   { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
   
+  { path: 'choose', component: TaskChooseComponent, pathMatch: 'full' },
   // { path: 'logout', component: LoginComponent },
-
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];
@@ -56,6 +58,7 @@ const appRoutes: Routes = [
     HomeComponent,
     RegistrationComponent,
     NavigationComponent
+    TaskChooseComponent
   ],
   imports: [
     HttpModule,

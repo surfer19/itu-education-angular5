@@ -22,11 +22,16 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { NavigationComponent } from './navigation/navigation.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
   { path: '',       component: HomeComponent, pathMatch: 'full' }, // pathMatch: 'full' , canActivate: [AuthGuard] },
   { path: 'login',  component: LoginComponent, pathMatch: 'full' },
+  { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
+  { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
+  
   // { path: 'logout', component: LoginComponent },
 
   // otherwise redirect to home
@@ -37,7 +42,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegistrationComponent,
+    NavigationComponent
   ],
   imports: [
     HttpModule,
@@ -46,7 +53,7 @@ const appRoutes: Routes = [
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: false } // <-- debugging purposes only
     ),
     // BrowserAnimationsModule,
     // MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatGridListModule

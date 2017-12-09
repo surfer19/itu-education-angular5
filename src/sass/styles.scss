@@ -21,6 +21,19 @@
 // '~bootstrap/scss/type';
 
 
+
+
+/* You can add global styles to this file, and also import other style files */
+
+// custom app scss
+
+// global
+html, body {
+    overflow: hidden;
+   // background: $grey_light;       
+}
+
+
 //body, html {
     // padding: 2em 23em;
     //background:white!important;

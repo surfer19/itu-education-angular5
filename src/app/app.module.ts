@@ -22,13 +22,16 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { TaskLayoutComponent } from './tasks/task-layout/task-layout.component';
+import { TaskChooseComponent } from './task-choose/task-choose.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
   { path: '',       component: HomeComponent, pathMatch: 'full' }, // pathMatch: 'full' , canActivate: [AuthGuard] },
   { path: 'login',  component: LoginComponent, pathMatch: 'full' },
+  { path: 'task',   component: TaskLayoutComponent, pathMatch: 'full' },
+  { path: 'choose', component: TaskChooseComponent, pathMatch: 'full' },
   // { path: 'logout', component: LoginComponent },
-
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];
@@ -37,7 +40,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    TaskLayoutComponent,
+    TaskChooseComponent
   ],
   imports: [
     HttpModule,
@@ -46,7 +51,7 @@ const appRoutes: Routes = [
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: false } // <-- debugging purposes only
     ),
     // BrowserAnimationsModule,
     // MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatGridListModule

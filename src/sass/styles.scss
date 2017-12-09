@@ -10,6 +10,12 @@
 // custom app scss
 @import './variables';
 
+// global
+html, body {
+    overflow: hidden;
+    // background: $grey_light;       
+}
+
 // src/sass/styles.scss
 
 // @import 

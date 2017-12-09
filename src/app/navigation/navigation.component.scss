@@ -1,0 +1,81 @@
+.nav {
+    min-height: 5vh;
+    background: blue;
+}
+.out-layout {
+    height: 95vh;
+    background: red;
+}
+
+.nav {
+    i { color: white}
+    //font-size: 50;
+}
+
+
+// .dropdown {
+//     a {position: relative;}
+//     display: inline-block;
+// }
+
+.txt-size {
+    font-size: 500;
+  
+}
+
+.borderNull{
+    td {
+        border: 0;
+    }
+}
+
+.tablePadding{
+    td {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
+}
+
+.lastItem{
+    td {
+        font-weight:  400;
+    }
+}
+
+.beforeLastElement{
+    td{
+        padding-bottom: 0.6rem;
+    }
+}
+
+.lastElement{
+    td{
+        border: 1px;
+        border-top: 1px solid rgba(0, 0, 0, 0.281);                    
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
+}
+
+.shadowOff {
+    box-shadow: none;
+    background: blue($color: #000000);
+    &:focus, &:active {
+        background: rgba(255, 255, 255, 0.26)!important;
+    }
+}
+
+.bckgrnd{
+    box-shadow: none;    
+    background: blue($color: #000000);
+    &:focus, &:active {
+        background: rgba(255, 255, 255, 0.26)!important;
+    }
+}
+
+.colorLink{
+    color: white;
+    
+}
+
+// padding: 0.85rem 2.13rem;

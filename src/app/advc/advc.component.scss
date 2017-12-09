@@ -1,0 +1,41 @@
+.nav {
+    min-height: 5vh;
+    background: blue;
+}
+.full-height{
+    height: 95vh;
+}
+.out-layout {
+    max-height: 85vh;
+    min-height: auto;
+    background: white;
+}
+.main-row{
+    max-height: 250px;
+    background-color:white;
+}
+.main-element{
+    max-height: 250px;
+}
+.bgnr-btn-clr{
+    background-color: orange;
+}
+.bgnr-txt-clr{
+    color:  orange; 
+}
+
+.container-bckg{
+    background-color: grey;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+    background-color: white;
+  }

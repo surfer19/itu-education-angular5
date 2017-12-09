@@ -22,11 +22,17 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { BgnrComponent } from './bgnr/bgnr.component';
+import { AdvcComponent } from './advc/advc.component';
+import { ExprComponent } from './expr/expr.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
   { path: '',       component: HomeComponent, pathMatch: 'full' }, // pathMatch: 'full' , canActivate: [AuthGuard] },
   { path: 'login',  component: LoginComponent, pathMatch: 'full' },
+  { path: 'bgnr',  component: BgnrComponent, pathMatch: 'full' },
+  { path: 'advc',  component: AdvcComponent, pathMatch: 'full' },
+  { path: 'expr',  component: ExprComponent, pathMatch: 'full' },
   // { path: 'logout', component: LoginComponent },
 
   // otherwise redirect to home
@@ -37,7 +43,10 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    BgnrComponent,
+    AdvcComponent,
+    ExprComponent,
   ],
   imports: [
     HttpModule,

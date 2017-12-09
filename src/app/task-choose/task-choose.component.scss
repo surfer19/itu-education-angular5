@@ -1,28 +1,107 @@
+// generic transform
+@mixin transform($transforms) {
+    -moz-transform: $transforms ;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+  }
+  
+  // scale
+  @mixin scale($scale) {
+    @include transform(scale($scale));
+  }
+  
+  /*
+   * Apply a CSS3 transition-duration
+   * @include transitionDuration(1s);
+   */
+  @mixin transitionDuration($duration) {
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    -o-transition-duration: $duration;
+    -ms-transition-duration: $duration;
+    transition-duration: $duration;
+  }
+  
+  @mixin transitionProperty($property) {
+    -webkit-transition-property: $property;
+    -moz-transition-property: $property;
+    -o-transition-property: $property;
+    -ms-transition-property: $property;
+    transition-property: $property;
+  }
+  
+
+  ////////////
 @import "~sass/variables";
 
 .nav {
     min-height: 10vh;
     background: blue;
 }
-.header { 
-    background: $grey_light;
+.header { margin-top: 80px;
+    h1 {
+        color: $grey_dark;
+        font-weight: 400;
+    }
 }
 .three-rows {
     background: $grey_light;
 
-    .item { 
+    .item { margin-top: 45px; color: white;
+        @include transitionDuration(0.4s);
+        @include transitionProperty(transform);
         .left {
             font-weight: 500;
-            background: $green;
-            min-height: 100px;
-            border-left: 2px solid $green;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            //border-radius: 5px; 
-            h3 { margin-bottom: 0; }
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;    
+            // background: $green;
+            min-height: 50px;
+            // border-left: 2px solid $green;
+            // border-top-left-radius: 6px;
+            // border-bottom-left-radius: 6px;              
+            h3 { margin-bottom: 0; }        
         }
         .right {
-            background: red;        
+            background: white;        
+            p {
+                color: black;
+                padding: 20px 0 10px 20px;
+                text-align: justify;
+                line-height: 20px;
+                font-size: 14px;
+            }
+        }
+        .icon {            
+            background: white;   
+            border-left: 2px solid white; 
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;       
+        }
+        &:hover {
+            @include scale(1.022);
+        }
+        &.my-orange {            
+            .left {            
+                border-left: 2px solid  $orange;
+                background: $orange;                
+            }
+            i { color: $orange; }
+        }
+        &.my-pink {
+            .left {                        
+                border-left: 2px solid $pink;            
+                background: $pink;                
+            }
+            i { color: $pink }
+        }
+        &.my-green {
+            .left {            
+                border-left: 2px solid $green;
+                background: $green;
+            }
+            i { color: $green }
         }
     }
 }

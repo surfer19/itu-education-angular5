@@ -6,7 +6,11 @@
 // global
 html, body {
     overflow: hidden;
-    background: $grey_light!important;       
+    background: $grey_light!important;     
+    font-family: "Roboto";  
+}
+h1,h2,h3,h4,h5,h6,p,span,div {
+    font-family: "Roboto";  
 }
 
 .container-fluid {
@@ -32,3 +36,4 @@ html, body {
 .incorrect-btn {
     opacity: 0.4;
 }
+

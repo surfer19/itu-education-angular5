@@ -1,3 +1,5 @@
+@import "~sass/variables";
+
 .section-registration {
     height: 100vh;
     > .row {
@@ -11,7 +13,7 @@
 }
 
 .registration-row{
-    padding-bottom: 250px;
+    // padding-bottom: 250px;
 }
 
 .registration-content{
@@ -20,8 +22,18 @@
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: white;
+    color: $grey_ultra_dark;
 }
 
 .top-padd{
     padding: 16px;
 }
+
+.button-send {
+    font-size: 1.1em;
+}
+
+h1 {
+    font-size: 3em;
+    color: $grey_ultra_dark;
+} 

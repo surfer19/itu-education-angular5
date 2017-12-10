@@ -1,3 +1,5 @@
+@import "~sass/variables";
+
 .section-login {
     height: 100vh;
     > .row {
@@ -20,4 +22,20 @@
 
 .top-padd{
     padding: 16px;
+}
+
+.button-send {
+    font-size: 1.1em;
+}
+a.reg-link {
+    font-weight: 400;
+    color: $blue;
+}
+h1 {
+    font-size: 3em;
+    color: $grey_ultra_dark;
+} 
+.md-form .prefix {
+     color: $grey_ultra_dark; 
+     font-size: 2.2em;
 }

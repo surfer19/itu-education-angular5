@@ -1,15 +1,11 @@
 @import "~sass/variables";
-
-.nav {
-    min-height: 5vh;
-    background: blue;
-}
+ 
 .full-height{
-    height: 95vh;
+    height: 92vh;
 }
 .out-layout {
-    max-height: 85vh;
-    min-height: auto;
+    // max-height: 85vh;
+    // min-height: auto;
     background: white;
 }
 .main-row{
@@ -26,13 +22,24 @@
     color:  $pink; 
 }
 
+h1 { font-size: 3em; }
+
 .container-bckg{
     background-color: $grey_light;
 }
 
+h4 {
+    color: $grey_dark;
+    margin-bottom: 0;
+}
+span { 
+    font-size: 11px; 
+    color: $grey_dark;
+}
+
 .btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     padding: 10px 16px;
     margin: 20px;
     text-align: center;
@@ -40,6 +47,11 @@
     line-height: 1.33;
     border-radius: 35px;
     background-color: white;
+    i {
+        font-size: 2.4em;
+        margin-left: -15px;
+        margin-top: -8px;
+    }
   }
 
   .sound-btn{
@@ -48,6 +60,7 @@
     margin: 50px;
     text-align: center;
     background-color: $grey_light;
+
   }
 
   .play-size{

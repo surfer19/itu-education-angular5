@@ -1,11 +1,23 @@
+@import "~sass/variables";
+
 .nav {
     min-height: 5vh;
-    background: blue;
     i { color: white}
 }
 .out-layout {
     height: 95vh;
     background: red;
+}
+
+.our-navbar {
+    .btn-primary:hover {
+        background: rgba(255, 255, 255, 0.26)!important;
+    }
+    &.our-bg-blue { background: $blue;         
+    }
+    &.our-bg-orange { background: $orange; }
+    &.our-bg-pink { background: $pink; }
+    &.our-bg-green { background: $green; }    
 }
 
 
@@ -74,4 +86,26 @@
     
 }
 
+@media (min-width: 600px){
+    .navbar.scrolling-navbar {
+        padding: 0;
+    }
+}
+
+.dropdown-menu-user {
+    right: -2px;
+    left: auto;
+    a {
+        margin: 5px 0 5px;
+        color: $grey_dark!important;
+    }
+    a:hover,focus {
+        background: $grey_light;
+        color: $grey_dark!important;
+    }
+}
+.dropdown-menu-button {
+    i { font-size: 4em; }
+    padding: 0 20px;
+}
 // padding: 0.85rem 2.13rem;

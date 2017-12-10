@@ -1,7 +1,8 @@
                 
 
 <!-- <div class="nav" >  -->
-<nav class="navbar nav navbar-expand-lg navbar-dark bg-blue scrolling-navbar">
+<nav *ngIf="nav.visible" class="navbar nav navbar-expand-lg our-navbar scrolling-navbar"
+  [ngClass]="{'our-bg-blue': nav.blue, 'our-bg-orange': nav.orange, 'our-bg-pink': nav.pink, 'our-bg-green': nav.green}">
         
 <!--<i class="material-icons prefix">lock_outline</i> -->
 
@@ -23,8 +24,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
           <div class="btn-group " dropdown>
-              <button dropdownToggle type="button" class="btn btn-primary waves-light bckgrnd" mdbRippleRadius>
-                <a  href="# "><i class="material-icons prefix colorLink">home</i></a>          
+              <button routerLink="/choose" dropdownToggle type="button" class="btn btn-primary waves-light bckgrnd" mdbRippleRadius>
+                <!-- <a ><i class="material-icons prefix colorLink">home</i></a>           -->
+                <i class="material-icons prefix colorLink">home</i>
               </button>
           </div>
       </li>
@@ -90,12 +92,11 @@
     </ul>
     <ul class="navbar-nav nav-flex-icons">      
       <li class="nav-item">
-
         <div class="btn-group " dropdown>
-          <button dropdownToggle type="button" class="btn btn-primary waves-light shadowOff" mdbRippleRadius>
+          <button dropdownToggle type="button" class="btn btn-primary btn waves-light shadowOff dropdown-menu-button" mdbRippleRadius>
             <i class="material-icons prefix">person_pin</i>
           </button>
-          <div class="dropdown-menu dropdown-primary">
+          <div class="dropdown-menu dropdown-menu-user dropdown-primary">
               <a class="dropdown-item " href="#">Odhásiť sa</a>
           </div>
         </div>

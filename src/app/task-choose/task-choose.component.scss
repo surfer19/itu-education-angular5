@@ -50,13 +50,16 @@
     background: $grey_light;
 
     .item { margin-top: 35px; color: white;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;                
         @include transitionDuration(0.4s);
         @include transitionProperty(transform);
         .left {
             font-weight: 500;
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;                
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;                
             min-height: 50px;
+            margin-left: -1px;
             h3 { margin-bottom: 0; }        
         }
         .right {
@@ -71,30 +74,33 @@
         }
         .icon {            
             background: white;   
-            border-left: 2px solid white; 
+            border-left: 3px solid white; 
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;       
         }
         &:hover {
             @include scale(1.022);
         }
-        &.my-orange {            
+        &.my-orange {          
+            border-left: 3px solid  $orange;
             .left {            
-                border-left: 2px solid  $orange;
+                border-left: 3px solid  $orange;
                 background: $orange;                
             }
             i { color: $orange; }
         }
         &.my-pink {
+            border-left: 3px solid $pink;               
             .left {                        
-                border-left: 2px solid $pink;            
+                border-left: 3px solid $pink;            
                 background: $pink;                
             }
             i { color: $pink }
         }
         &.my-green {
+            border-left: 3px solid $green;
             .left {            
-                border-left: 2px solid $green;
+                border-left: 3px solid $green;
                 background: $green;
             }
             i { color: $green }

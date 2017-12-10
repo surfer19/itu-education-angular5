@@ -8,10 +8,18 @@ import { NavigationService } from '../navigation/navigation.service';
 })
 export class BgnrComponent implements OnInit {
 
+  public incorrect: boolean;
+  public correct: boolean;
+
   constructor( public nav: NavigationService) { }
     public ngOnInit() {
       this.nav.show();
       this.nav.reset();
       this.nav.setGreen();
+    }
+
+    public pressBtn() {
+        this.incorrect = true;
+        this.correct = true;
     }
 }

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavigationService } from './navigation.service';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-
 
 export class NavigationComponent implements OnInit {
   private model: any = {};
@@ -15,9 +15,11 @@ export class NavigationComponent implements OnInit {
 
   constructor(
     private router: Router,
+    public nav: NavigationService,
     // private authenticationService: AuthenticationService
   ) { }
   public ngOnInit() {
+    console.log('v nav comp contr= ', this.nav.orange);
     // reset login status
     // this.authenticationService.logout();
   }
@@ -35,5 +37,5 @@ export class NavigationComponent implements OnInit {
       //         this.loading = false;
       //     }
       // });
-  } 
+  }
 }

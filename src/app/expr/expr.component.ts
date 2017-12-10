@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../navigation/navigation.service';
 
 @Component({
   selector: 'app-expr',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExprComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor( public nav: NavigationService) { }
+    public ngOnInit() {
+      this.nav.show();
+      this.nav.reset();
+      this.nav.setPink();
+    }
 }

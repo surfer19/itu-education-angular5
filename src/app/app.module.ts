@@ -28,11 +28,13 @@ import { ExprComponent } from './expr/expr.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TaskChooseComponent } from './task-choose/task-choose.component';
+import { TheEndComponent } from './the-end/the-end.component';
+import { NavigationService } from './navigation/navigation.service';
 // import { TaskLayoutComponent } from './tasks/task-layout/task-layout.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
-  { path: '',       component: HomeComponent, pathMatch: 'full' }, // pathMatch: 'full' , canActivate: [AuthGuard] },
+  { path: '',       component: LoginComponent, pathMatch: 'full' }, // pathMatch: 'full' , canActivate: [AuthGuard] },
   { path: 'login',  component: LoginComponent, pathMatch: 'full' },
   { path: 'bgnr',  component: BgnrComponent, pathMatch: 'full' },
   { path: 'advc',  component: AdvcComponent, pathMatch: 'full' },
@@ -40,8 +42,7 @@ const appRoutes: Routes = [
   { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
   { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
   { path: 'choose', component: TaskChooseComponent, pathMatch: 'full' },
-  // { path: 'logout', component: LoginComponent },
-  // otherwise redirect to home
+  { path: 'end', component: TheEndComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' }
 ];
 
@@ -56,7 +57,8 @@ const appRoutes: Routes = [
     HomeComponent,
     RegistrationComponent,
     NavigationComponent,
-    TaskChooseComponent
+    TaskChooseComponent,
+    TheEndComponent
   ],
   imports: [
     HttpModule,
@@ -77,6 +79,7 @@ const appRoutes: Routes = [
     // UserService,
     fakeBackendProvider,
     MockBackend,
+    NavigationService,
     // BaseRequestOptions
   ],
   bootstrap: [AppComponent]

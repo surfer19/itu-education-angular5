@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     }
 //   .subscribe((result) => {
     private login() {
-        this.router.navigate(['/']);
+        // this.router.navigate(['/']);
         // this.loading = true;
         // call our backend service
         // this.authenticationService.login(this.model.username, this.model.password).map((res) => {

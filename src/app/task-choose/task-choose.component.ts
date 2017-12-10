@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../navigation/navigation.service';
 
 @Component({
   selector: 'app-task-choose',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskChooseComponent implements OnInit {
 
-  constructor() { }
+  constructor( public nav: NavigationService ) { }
 
-  ngOnInit() {
+  public ngOnInit() {
+    this.nav.show();
+    this.nav.reset();
+    this.nav.setBlue();
   }
-
 }

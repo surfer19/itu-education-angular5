@@ -20,3 +20,7 @@ html, body {
 .material-icons.md-6 { font-size: 2.8em; }
 .material-icons.md-7 { font-size: 3.2em; }
 // .material-icons.md-8 { font-size: 4.2em; }
+.dropdown-item.active, .dropdown-item:active {
+    background: rgba(255,255,255,0)!important;
+    color: black!important;
+}

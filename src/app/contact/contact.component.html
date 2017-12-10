@@ -1,0 +1,48 @@
+<div class="nav">
+ 
+</div>
+    
+<nav class="navbar navbar-expand-lg   ">
+  <div class="navbar-collapse" >
+        
+  </div>
+
+  <div class="out-layout">
+    <li class="nav-item">        
+      <div class="btn-group our-group" dropdown>
+        <button type="button" class="btn btn-danger btn-circle btn-lg " dropdownToggle><i class="material-icons prefix">question_answer</i></button>            
+        
+        <div class="dropdown-menu dropdown-primary dropdown-menu-usr ">
+          <div class="dropdown-item">
+
+            <h5>Chcete nás kontaktovať?</h5>
+            
+            <table>
+              <tr>
+                <div class="md-form form-md md-center">       
+                    <input mdbActive type="text" id="form1" class="form-control" [(ngModel)]="model.mail"  required>
+                    <label for="form1" class="">Váš E-mail</label>
+                  </div>
+
+                  <div class="md-form form-md md-center">
+                      <input mdbActive type="text" id="form1" class="form-control"  [(ngModel)]="model.sprava"  required >
+                      <label for="form1" class="">Správa</label>
+                  </div>
+              </tr>                   
+              <tr >
+                <div class="form-group text-right">
+                    <button [disabled]="loading" class="btn btn-primary mt-3">POTVRDIŤ</button>
+                </div>
+              </tr>   
+            </table>
+          </div>
+        </div> 
+      </div>
+    </li>
+
+
+  </div>
+
+</nav>                    
+
+   

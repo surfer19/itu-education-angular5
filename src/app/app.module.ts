@@ -25,6 +25,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ContactComponent } from './contact/contact.component';
 // import { Services } from '@angular/core/src/view';
 
 const appRoutes: Routes = [
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
   { path: 'login',  component: LoginComponent, pathMatch: 'full' },
   { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
   { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
+  { path: 'contact',  component: ContactComponent, pathMatch: 'full' },
   
   // { path: 'logout', component: LoginComponent },
 
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     LoginComponent,
     HomeComponent,
     RegistrationComponent,
-    NavigationComponent
+    NavigationComponent,
+    ContactComponent
   ],
   imports: [
     HttpModule,

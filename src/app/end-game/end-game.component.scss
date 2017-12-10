@@ -1,0 +1,37 @@
+@import "~sass/variables";
+
+.section-login {
+    height: 100vh;
+    > .row {
+        height: 100%;
+    }
+}
+
+.login-content{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.login-col{
+    max-width: 60%;
+    max-height: 70%;
+}
+
+.top-padd{
+    padding: 16px;
+}
+
+.text-color{
+    color: #7C7C7C;
+}
+
+.button-color{
+    background-color: $orange;
+}
+
+.score-txt-size{
+    font-size: 120px;
+}

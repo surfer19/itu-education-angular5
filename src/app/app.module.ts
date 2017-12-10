@@ -28,8 +28,8 @@ import { ExprComponent } from './expr/expr.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TaskChooseComponent } from './task-choose/task-choose.component';
-import { TheEndComponent } from './the-end/the-end.component';
 import { NavigationService } from './navigation/navigation.service';
+import { EndGameComponent } from './end-game/end-game.component';
 // import { TaskLayoutComponent } from './tasks/task-layout/task-layout.component';
 // import { Services } from '@angular/core/src/view';
 
@@ -42,7 +42,8 @@ const appRoutes: Routes = [
   { path: 'registration',  component: RegistrationComponent, pathMatch: 'full' },
   { path: 'navigation',  component: NavigationComponent, pathMatch: 'full' },
   { path: 'choose', component: TaskChooseComponent, pathMatch: 'full' },
-  { path: 'end', component: TheEndComponent, pathMatch: 'full' },
+  { path: 'end-game', component: EndGameComponent, pathMatch: 'full' },
+  
   { path: '**', redirectTo: '' }
 ];
 
@@ -58,7 +59,7 @@ const appRoutes: Routes = [
     RegistrationComponent,
     NavigationComponent,
     TaskChooseComponent,
-    TheEndComponent
+    EndGameComponent
   ],
   imports: [
     HttpModule,

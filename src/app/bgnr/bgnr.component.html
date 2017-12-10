@@ -27,15 +27,21 @@
                 </div>
                 <div class="row justify-content-center align-self-center pl-3 pr-3">
                     <div class="col-md-3">
-                        <button type="button" class="btn btn-block bgnr-btn-clr p-2">odpoved 1</button>
+                        <button (click)="pressBtn()" [ngClass]="{'incorrect-btn': incorrect}" type="button" class="btn btn-block bgnr-btn-clr p-2" disable="disabled">odpoved 1
+                                <i *ngIf="incorrect" class="material-icons ico-answer">clear</i>
+                        </button>
                     </div>
                     <div class="col-md-3">
-                        <button type="button" class="btn btn-block bgnr-btn-clr p-2">odpoved 1</button>
+                        <button (click)="pressBtn()" [ngClass]="{'correct-btn': correct}" type="button" class="btn btn-block bgnr-btn-clr p-2">odpoved 1                                
+                                <i *ngIf="correct" class="material-icons ico-answer">done</i>
+                        </button>
                     </div>
                     <div class="col-md-3">
-                        <button type="button" class="btn btn-block bgnr-btn-clr p-2">odpoved 1</button>
-                    </div> 
-                </div>
+                        <button (click)="pressBtn()" [ngClass]="{'incorrect-btn': incorrect}" type="button" class="btn btn-block bgnr-btn-clr p-2">odpoved 1                            
+                                <i *ngIf="incorrect" class="material-icons ico-answer">clear</i>
+                        </button>
+                    </div>
+                </div> 
                 <div class="row">
                         <div class="col-md">
                                 <button type="button" class="btn btn-circle btn-xl"><i class="material-icons bgnr-txt-clr">navigate_before</i></button>  

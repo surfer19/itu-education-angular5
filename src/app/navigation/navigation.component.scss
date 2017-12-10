@@ -1,7 +1,7 @@
 @import "~sass/variables";
 
 .nav {
-    min-height: 5vh;
+    // min-height: 5vh;
     i { color: white}
 }
 .out-layout {
@@ -105,7 +105,13 @@
     }
 }
 .dropdown-menu-button {
-    i { font-size: 4em; }
-    padding: 0 20px;
+    i { font-size: 3em; }
+    // padding: 0 20px;
 }
 // padding: 0.85rem 2.13rem;
+
+.buttons-left {
+
+}
+
+//    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
